@@ -1,95 +1,328 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hacked by KIDBENGALA</title>
-  <meta name="description" content="Hacked By T3rr8us P4nk">
-  <meta name="author" content="T3rr8us">
-  <link rel="SHORTCUT ICON" href="http://winhacker.do.am/favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background: #000;
-      padding-bottom: 40px;
-      color: #000;
-      transform: translateZ(-100px);
-      animation: rain 3s infinite linear;
-    }
-
-    @keyframes rain {
-      from { background-position: left 0px; }
-      to { background-position: left 300px; }
-    }
-
-    .featurette-heading {
-      font-size: 50px;
-      font-weight: 300;
-      font-family: Verdana, Arial, Helvetica, sans-serif;
-      color: black;
-    }
-
-    @media (max-width: 767px) {
-      .featurette-heading {
-        font-size: 30px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIBADO COM ESTILO</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff0066 0%, #ff6600 50%, #ffff00 100%);
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" viewBox="0 0 24 27"><polygon points="2,2 22,13 12,16 2,25" fill="%23ff00ff" stroke="black"/><text x="8" y="20" font-size="12">💩</text></svg>'), auto;
+        }
+        
+        .container {
+            text-align: center;
+            z-index: 20;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 80px 20px 80px 20px;
+            border: 8px dashed #ff00ff;
+            box-shadow: 0 0 0 10px #00ff00, 0 0 0 20px #ff6600;
+            max-width: 95%;
+            animation: girar 0.3s infinite;
+            transform-origin: center;
+        }
+        
+        @keyframes girar {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(2deg); }
+            75% { transform: rotate(-2deg); }
+            100% { transform: rotate(0deg); }
+        }
+        
+        .skull {
+            font-size: 150px;
+            animation: tremer 0.1s infinite;
+            display: inline-block;
+        }
+        
+        @keyframes tremer {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(2px, -2px); }
+            75% { transform: translate(-2px, 2px); }
+            100% { transform: translate(0, 0); }
+        }
+        
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 20px 0;
+            background: linear-gradient(45deg, red, yellow, green, blue, purple);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+            text-shadow: 4px 4px 0px black;
+        }
+        
+        .message {
+            font-size: 32px;
+            color: #ff00aa;
+            margin: 20px 0;
+            line-height: 1.3;
+            font-weight: bold;
+            background: yellow;
+            padding: 15px;
+            border-radius: 50px;
+            text-shadow: 3px 3px 0px cyan;
+        }
+        
+        .zoera {
+            font-size: 24px;
+            background: #000;
+            color: #0f0;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: monospace;
+            text-align: left;
+            border: 3px solid red;
+            animation: pisca 0.5s step-end infinite;
+        }
+        
+        @keyframes pisca {
+            0%, 100% { border-color: red; }
+            50% { border-color: blue; }
+        }
+        
+        .emoji-big {
+            font-size: 80px;
+            animation: rodar 1s linear infinite;
+            display: inline-block;
+        }
+        
+        @keyframes rodar {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .alert {
+            font-size: 28px;
+            background: red;
+            color: yellow;
+            padding: 10px;
+            margin: 15px 0;
+            font-weight: bold;
+            animation: piscaTexto 0.2s step-end infinite;
+        }
+        
+        @keyframes piscaTexto {
+            0%, 100% { opacity: 1; background: red; color: yellow; }
+            50% { opacity: 0.7; background: darkred; color: white; }
+        }
+        
+        button {
+            margin-top: 20px;
+            padding: 20px 40px;
+            background: radial-gradient(circle, red, darkred);
+            border: none;
+            color: yellow;
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: all 0.1s;
+            text-transform: uppercase;
+            animation: botaoPula 0.3s infinite;
+        }
+        
+        @keyframes botaoPula {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        button:hover {
+            transform: scale(1.2);
+            background: radial-gradient(circle, yellow, orange);
+            color: red;
+        }
+        
+        .footer {
+            margin-top: 20px;
+            font-size: 18px;
+            background: white;
+            padding: 10px;
+            border: 2px dotted magenta;
+        }
+        
+        audio {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .title { font-size: 28px; }
+            .message { font-size: 20px; }
+            .zoera { font-size: 14px; }
+            .skull { font-size: 80px; }
+        }
+    </style>
 </head>
 <body>
-  <br><br>
-  <div class="featurette">
-    <img src="https://gifyu.com/image/bvYZI" width="99%" height="200px">
-    <center>
-      <h2 class="featurette-heading">
-        <b>
-          <script>
-            var farbbibliothek = [
-              [
-                "#FF0000", "#EE0000", "#DD0000", "#CC0000", "#BB0000", "#AA0000",
-                "#990000", "#880000", "#770000", "#660000", "#550000", "#440000",
-                "#330000", "#220000", "#110000", "#000000", "#110000", "#220000",
-                "#330000", "#440000", "#550000", "#660000", "#770000", "#880000",
-                "#990000", "#AA0000", "#BB0000", "#CC0000", "#DD0000", "#EE0000"
-              ]
-            ];
-            var farben = farbbibliothek[0];
-            var text = " You Have Been Hacked ";
-            function string2array(t) {
-              Buchstabe = t.split("");
-            }
-            function divserzeugen() {
-              for (var i = 0; i < Buchstabe.length; i++) {
-                document.write("<span id='a" + i + "'>" + Buchstabe[i] + "</span>");
-              }
-            }
-            string2array(text);
-            divserzeugen();
-          </script>
-        </b>
-      </h2>
-    </center>
-    <hr width="80%" style="color:black">
-    <div style="background:black; padding:10px;">
-      <b>
-        <center>
-          <font face="Tahoma" size="5" color="red">
-            [
-            <marquee style="width:200px; height:24px;">
-              <font face="Iceland" color="white">
-                Hacked By : <font face="Iceland" color="red">by KIDBENGALA 
-               </font>
-              </font>
-            </marquee>
-            ]
-          </font>
-        </center>
-      </b>
+    <div class="container">
+        <div class="skull">💩💀💩</div>
+        <div class="title">
+            ⚡ VOCÊ FOI MACETADO ⚡
+        </div>
+        
+        <div class="message">
+            🖕🍑🍆💦 SENTOU A BUNDA NO PAU DA DESGRAÇA 🍆💦🍑🖕<br>
+            🔥 SEU SITE É UMA BOSTA IGUAL SEU CU 🔥
+        </div>
+        
+        <div class="alert">
+            🚨🚨🚨 AL CAPONE MANDOU LEVAR 🚨🚨🚨
+        </div>
+        
+        <div class="zoera">
+            ═══════════════════════════════════════════════════<br>
+            &gt; [INFO] SISTEMA: KIBADO<br>
+            &gt; [INFO] ADMIN: VIADO<br>
+            &gt; [INFO] SEGURANÇA: PIOR QUE TETO DE FAVELA<br>
+            &gt; [INFO] BACKUP: NENHUM KKKKKKK<br>
+            &gt; [INFO] SENHA: "123456" OU "admin" COM CERTEZA<br>
+            &gt; [INFO] SQL INJECTION: SIM<br>
+            &gt; [INFO] XSS: SIM PRA CARALHO<br>
+            &gt; [INFO] PRIVACIDADE: KIBADA JUNTO<br>
+            ═══════════════════════════════════════════════════
+        </div>
+        
+        <div class="message" style="background: magenta; color: cyan;">
+            🐸🐸🐸 TOMA NO RABO SEU ARROMBADO 🐸🐸🐸<br>
+            💅💅💅 O CABELO DO AL CAPONE É NA REGUA 💅💅💅<br>
+            🎪🎪🎪 SEU SITE É UM CIRCO, SÓ TEM PALHAÇO 🎪🎪🎪
+        </div>
+        
+        <div class="emoji-big">
+            🖕😹🖕😹🖕😹🖕😹🖕😹🖕😹
+        </div>
+        
+        <div class="alert" style="background: green;">
+            🏳️‍🌈🏳️‍🌈🏳️‍🌈 COMUNICADO OFICIAL 🏳️‍🌈🏳️‍🌈🏳️‍🌈<br>
+            SEU SITE FOI INVADIDO PORQUE VOCÊ É FRACO<br>
+            FALTA DE CAPACIDADE, FALTA DE VERGONHA NA CARA<br>
+            AL CAPONE AGRADECE A PARTICIPAÇÃO 🏆🏆🏆
+        </div>
+        
+        <div class="zoera" style="background: pink; color: black;">
+            ╔══════════════════════════════════════╗<br>
+            ║  💋  DEDADA NO OLEO DE COCO  💋     ║<br>
+            ║  🍑  PREPARA O CU QUE VEM MAIS  🍑  ║<br>
+            ║  🍆  AL CAPONE NÃO PERDOA  🍆       ║<br>
+            ╚══════════════════════════════════════╝
+        </div>
+        
+        <div class="footer">
+            🎯 OPERAÇÃO: TROPA DO AL CAPONE 🎯<br>
+            🎯 STATUS: SEU CU É MINHA CASA 🎯<br>
+            🎯 [ CLICA AÍ SEU BOSTA ] 🎯
+        </div>
+        
+        <button onclick="baitaZoera()">🔥 CLICA AQUI SEU FRACO 🔥</button>
     </div>
-    <p style="font-family:Verdana; font-size:16px; color:red;" align="center">
-KIDBENGALA oder Terror von allen Systemen 
-    </p>
-  </div>
-  <br><br>
+    
+    <audio id="audioZoera" loop>
+        <source src="data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4Ljc2LjEwMAAAAAAAAAAAAAAA//tUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAABYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgAAAAATU0VBMy4xMDBjAAAAAAAAAAAAAAD/4g+YTU0EoAAAAGhHSEUAAAAAAAAAAAAAAAAAAAAAAP/Y/+24wLAAAG1pbnRzcnQAAAAAAABNYWpvcgAAAAABAAAAAAAAU0Nob29zZQAAAAABAAAAAAAAAAAAAAAA/+4ADkF1ZGlvIElEIENvZGUAAAAAEAAAAQAAAAEAAQABAAAAAAABAAAAAAD/7QAsQXVkaW8gSURfQ29kZQAAAAEAAAABAAAAAQABAAAAAAABAAAAAAD/7QAMQXVkaW8gU2FtcGxl////7kqhqqGqoAAAfVBQUEwEAAAADAAAADkAAABVTkcAAAAAMjAwOQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+3vwAAA" type="audio/mpeg">
+    </audio>
+    
+    <script>
+        function baitaZoera() {
+            const emojis = ['🍑', '🍆', '💩', '🖕', '🐸', '💅', '🏳️‍🌈', '🎪', '🐒', '🦍'];
+            for(let i = 0; i < 100; i++) {
+                setTimeout(() => {
+                    const div = document.createElement('div');
+                    div.style.position = 'fixed';
+                    div.style.left = Math.random() * window.innerWidth + 'px';
+                    div.style.top = Math.random() * window.innerHeight + 'px';
+                    div.style.fontSize = (30 + Math.random() * 50) + 'px';
+                    div.style.zIndex = '9999';
+                    div.style.pointerEvents = 'none';
+                    div.style.animation = 'rodar 0.5s ease-out';
+                    div.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+                    document.body.appendChild(div);
+                    setTimeout(() => div.remove(), 2000);
+                }, i * 50);
+            }
+            
+            document.body.style.animation = 'tremer 0.05s infinite';
+            setTimeout(() => {
+                document.body.style.animation = '';
+            }, 3000);
+            
+            for(let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    const alerta = document.createElement('div');
+                    alerta.style.position = 'fixed';
+                    alerta.style.top = '50%';
+                    alerta.style.left = '50%';
+                    alerta.style.transform = 'translate(-50%, -50%)';
+                    alerta.style.background = 'red';
+                    alerta.style.color = 'yellow';
+                    alerta.style.fontSize = '40px';
+                    alerta.style.fontWeight = 'bold';
+                    alerta.style.padding = '20px';
+                    alerta.style.zIndex = '10000';
+                    alerta.style.whiteSpace = 'nowrap';
+                    alerta.style.border = '10px solid magenta';
+                    alerta.innerHTML = '🖕 TOMA NO CU 🖕';
+                    document.body.appendChild(alerta);
+                    setTimeout(() => alerta.remove(), 500);
+                }, i * 100);
+            }
+            
+            const audio = document.getElementById('audioZoera');
+            audio.play().catch(e => console.log('áudio bloqueado mas foda-se'));
+            
+            alert('🖕🖕🖕 SEU SITE É UMA MERDA IGUAL VOCÊ 🖕🖕🖕');
+            alert('🍑🍑🍑 PREPARA O CU QUE O AL CAPONE VAI ENTRAR 🍑🍑🍑');
+            alert('💩💩💩 VOCÊ É FRACO, TE MANCA SEU BOSTA 💩💩💩');
+        }
+        
+        console.log('%c🖕🖕🖕 AL CAPONE MANDOU LEVAR 🖕🖕🖕', 'color: red; font-size: 30px; font-weight: bold;');
+        console.log('%c🍑 SEU SITE É UMA BOSTA 🍑', 'color: magenta; font-size: 25px;');
+        console.log('%c🐸 VAI CHORAR NO BANHO SEU FRACO 🐸', 'color: green; font-size: 25px;');
+        
+        setInterval(() => {
+            const cores = ['red', 'blue', 'green', 'yellow', 'magenta', 'cyan'];
+            document.querySelector('.container').style.borderColor = cores[Math.floor(Math.random() * cores.length)];
+            document.querySelector('.container').style.backgroundColor = `rgba(255, 255, 255, ${0.7 + Math.random() * 0.3})`;
+        }, 200);
+        
+        setInterval(() => {
+            const mensagens = [
+                '🍆🍆🍆',
+                '🖕🖕🖕',
+                '💩💩💩',
+                '🍑🍑🍑',
+                '🐸🐸🐸'
+            ];
+            document.title = mensagens[Math.floor(Math.random() * mensagens.length)];
+        }, 500);
+        
+        for(let i = 0; i < 20; i++) {
+            setTimeout(() => {
+                const div = document.createElement('div');
+                div.style.position = 'fixed';
+                div.style.bottom = '0';
+                div.style.left = Math.random() * window.innerWidth + 'px';
+                div.style.fontSize = '40px';
+                div.style.zIndex = '9999';
+                div.innerHTML = '🖕';
+                document.body.appendChild(div);
+                setTimeout(() => div.remove(), 3000);
+            }, i * 300);
+        }
+    </script>
 </body>
 </html>
